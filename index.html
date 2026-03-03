@@ -173,7 +173,7 @@ a { color: inherit; text-decoration: none; }
   position: absolute; inset: 0;
   background:
     linear-gradient(to bottom, rgba(27,42,74,.2) 0%, rgba(27,42,74,.02) 30%, rgba(27,42,74,.5) 100%),
-    url('hero.jpg') center/cover no-repeat;
+    url('インディゴブルー_タンス_ジュエリー_16_9_テキスト余白.jpeg') center/cover no-repeat;
   background-color: #1B2A4A;
   will-change: transform;
 }
@@ -218,7 +218,10 @@ a { color: inherit; text-decoration: none; }
    ─────────────────────────── */
 .atelier {
   padding: 16vh 8vw;
-  background: var(--navy);
+  background:
+    linear-gradient(to bottom, rgba(27,42,74,.55) 0%, rgba(27,42,74,.7) 100%),
+    url('UZUME店舗_夜の外観_ライカ70%.png') center/cover no-repeat;
+  background-color: var(--navy);
   color: var(--off-white);
   text-align: center;
   position: relative; overflow: hidden;
@@ -505,100 +508,60 @@ a { color: inherit; text-decoration: none; }
 /* ───────────────────────────
    SEC 6 : COLLECTIONS
    ─────────────────────────── */
-/* --- Basic --- */
-.col-basic {
-  padding: 22vh 8vw;
-  background: linear-gradient(180deg, var(--off-white) 0%, #f0eeeb 100%);
-  position: relative;
-}
-.col-basic-inner {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6vw; align-items: center;
-  max-width: 1200px; margin: 0 auto;
-}
-.col-basic-vis {
-  aspect-ratio: 4/3;
-  background:
-    radial-gradient(ellipse at 50% 50%, rgba(192,197,201,.06) 0%, transparent 70%),
-    linear-gradient(135deg, #e8e5e0, #ddd9d2 50%, #d0ccc4);
-  position: relative; overflow: hidden;
-}
-.col-basic-vis::after {
-  content: 'Photo placeholder';
-  position: absolute; bottom: 20px; left: 24px;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 200; font-size: .5rem;
-  letter-spacing: .3em; text-transform: uppercase;
-  color: rgba(27,42,74,.1);
-}
-.col-basic-body {}
-.col-header-label {
+.collections { padding: 18vh 8vw; background: var(--off-white); }
+.collections-header { text-align: center; margin-bottom: 10rem; }
+.collections-header h2 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 200; font-size: clamp(.5625rem, .7vw, .6875rem);
+  font-weight: 200; font-size: clamp(.6875rem,.9vw,.8125rem);
   letter-spacing: .35em; text-transform: uppercase;
   color: var(--silver); margin-bottom: 2rem;
 }
-.col-title {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 300; font-size: clamp(1rem, 1.4vw, 1.25rem);
-  letter-spacing: .2em; text-transform: uppercase;
-  margin-bottom: 1rem;
+.collections-header p {
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(1.25rem,2.2vw,1.625rem);
+  font-weight: 400; line-height: 1.9; letter-spacing: .06em;
 }
-.col-sub {
-  font-size: .6875rem; color: var(--silver);
-  letter-spacing: .15em; margin-bottom: 2.5rem;
-}
-.col-desc {
-  font-size: clamp(.8125rem, .95vw, .9375rem);
-  line-height: 2.2; color: var(--text-body);
-  letter-spacing: .03em; max-width: 420px;
-}
-/* --- Transition gradient --- */
-.col-transition {
-  height: 20vh;
-  background: linear-gradient(180deg, #f0eeeb 0%, var(--charcoal) 100%);
-}
-/* --- NOIR --- */
-.col-noir {
-  padding: 22vh 8vw;
-  background: var(--charcoal);
-  color: var(--off-white);
+.col-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; }
+.col-card { position: relative; }
+.col-card-vis {
+  aspect-ratio: 4/3;
+  margin-bottom: 3rem;
   position: relative; overflow: hidden;
+  transition: transform .8s var(--ease);
 }
-.col-noir::before {
-  content: ''; position: absolute; inset: 0; opacity: .025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 200px; pointer-events: none;
-}
-.col-noir-inner {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6vw; align-items: center;
-  max-width: 1200px; margin: 0 auto;
-  position: relative; z-index: 1;
+.col-card:hover .col-card-vis { transform: scale(.97); }
+.col-basic-vis {
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(192,197,201,.08) 0%, transparent 70%),
+    linear-gradient(135deg, #e8e5e0, #ddd9d2 50%, #d0ccc4);
 }
 .col-noir-vis {
-  aspect-ratio: 4/3;
   background:
-    radial-gradient(ellipse at 50% 50%, rgba(27,42,74,.2) 0%, transparent 70%),
+    radial-gradient(ellipse at 50% 50%, rgba(27,42,74,.15) 0%, transparent 70%),
     linear-gradient(135deg, #1a1f2c, #1B2A4A 50%, #0e1520);
-  position: relative; overflow: hidden;
 }
-.col-noir-vis::after {
-  content: 'Photo placeholder';
+.col-card-vis::after {
   position: absolute; bottom: 20px; left: 24px;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 200; font-size: .5rem;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200; font-size: .5625rem;
   letter-spacing: .3em; text-transform: uppercase;
-  color: rgba(250,248,245,.06);
 }
-.col-noir-body {}
-.col-noir-body .col-header-label { color: rgba(250,248,245,.3); }
-.col-noir-body .col-title {
-  font-weight: 200; letter-spacing: .3em;
+.col-basic-vis::after { content: 'Photo placeholder'; color: rgba(27,42,74,.12); }
+.col-noir-vis::after { content: 'Photo placeholder'; color: rgba(250,248,245,.08); }
+.col-card-name {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300; font-size: clamp(1rem,1.4vw,1.25rem);
+  letter-spacing: .18em; text-transform: uppercase;
+  margin-bottom: 1rem;
 }
-.col-noir-body .col-sub { color: rgba(250,248,245,.3); }
-.col-noir-body .col-desc {
-  color: rgba(250,248,245,.55);
+.col-card-sub {
+  font-size: .75rem; color: var(--silver);
+  letter-spacing: .12em; margin-bottom: 1.75rem;
+}
+.col-card-desc {
+  font-size: clamp(.875rem,1vw,1rem);
+  line-height: 2.4; color: var(--text-body);
+  letter-spacing: .04em;
 }
 
 /* ───────────────────────────
@@ -805,11 +768,8 @@ a { color: inherit; text-decoration: none; }
   .indigo-story-vis-inner { min-height: 280px; }
   .indigo-story-body { padding: 10vh 7vw; }
   .indigo-pull { padding: 10vh 7vw; }
-  .col-basic, .col-noir { padding: 14vh 7vw; }
-  .col-basic-inner, .col-noir-inner {
-    grid-template-columns: 1fr; gap: 3rem;
-  }
-  .col-transition { height: 12vh; }
+  .collections { padding: 12vh 7vw; }
+  .col-grid { grid-template-columns: 1fr; gap: 56px; }
   .phi { padding: 16vh 7vw; }
   .phi h2 { letter-spacing: .08em; }
   .values { grid-template-columns: 1fr; }
@@ -976,43 +936,30 @@ a { color: inherit; text-decoration: none; }
 </section>
 
 <!-- ════ SEC 6 : COLLECTIONS ════ -->
-<div id="collections">
-  <!-- Basic -->
-  <section class="col-basic">
-    <div class="col-basic-inner">
-      <div class="col-basic-vis sc-rv"></div>
-      <div class="col-basic-body sl-r">
-        <div class="col-header-label">Collection</div>
-        <div class="col-title">UZUME Basic</div>
-        <div class="col-sub">甲府百年のアーカイブから</div>
-        <p class="col-desc">
-          甲府の工場には、百年分の型が眠っている。<br>
-          数万個のアーカイブから「時代を超えるデザイン」だけを選び出す。<br>
-          石を活かし、生活に溶け込む形に。<br>
-          毎日、デニムとTシャツで身につけられるジュエリーへ。
-        </p>
-      </div>
+<section class="collections" id="collections">
+  <div class="collections-header">
+    <h2 class="rv">Two Collections</h2>
+    <p class="rv d1">百年の意匠を、2つの眼で。</p>
+  </div>
+  <div class="col-grid">
+    <div class="col-card sl-l">
+      <div class="col-card-vis col-basic-vis"></div>
+      <div class="col-card-name">UZUME Basic</div>
+      <div class="col-card-sub">甲府百年のアーカイブから</div>
+      <p class="col-card-desc">
+        甲府の工場に蓄積された数万個の型。百年以上にわたる日本の宝飾デザインの記憶から、「時代を超えるデザイン」を選び出す。石を活かし、日常に溶け込む形に。
+      </p>
     </div>
-  </section>
-  <!-- Transition -->
-  <div class="col-transition" aria-hidden="true"></div>
-  <!-- NOIR -->
-  <section class="col-noir">
-    <div class="col-noir-inner">
-      <div class="col-noir-body sl-l">
-        <div class="col-header-label">Collection</div>
-        <div class="col-title">UZUME NOIR</div>
-        <div class="col-sub">アーティストとの共創</div>
-        <p class="col-desc">
-          受け継いだ石に、現代アーティストの眼が介入する。<br>
-          記憶を壊さず、まだ誰も見たことのない姿へ。<br>
-          継承と破壊の境界に立つコレクション。
-        </p>
-      </div>
-      <div class="col-noir-vis sc-rv"></div>
+    <div class="col-card sl-r">
+      <div class="col-card-vis col-noir-vis"></div>
+      <div class="col-card-name">UZUME NOIR</div>
+      <div class="col-card-sub">アーティストとの共創</div>
+      <p class="col-card-desc">
+        Basicの審美眼の上に、アーティストの現代表現を重ねる。受け継いだジュエリーが、誰も見たことのない姿に変わる。
+      </p>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
 <!-- ════ SEC 7 : PHILOSOPHY ════ -->
 <section class="phi" id="phi">
