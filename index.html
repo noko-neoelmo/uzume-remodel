@@ -411,99 +411,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .05em;
 }
 
-/* ───────────────────────────
-   SEC 5 : INDIGO
-   ─────────────────────────── */
-.indigo {
-  padding: 0; background: var(--navy); color: #fff;
-  position: relative; overflow: hidden;
-}
-.indigo::before {
-  content: ''; position: absolute; inset: 0; opacity: .01;
-  background-image: radial-gradient(#faf8f5 .5px, transparent .5px);
-  background-size: 24px 24px; pointer-events: none;
-}
-/* opening question — centered, isolated */
-.indigo-hero {
-  min-height: 85vh;
-  display: flex; align-items: center; justify-content: center;
-  text-align: center; padding: 16vh 8vw;
-  position: relative; z-index: 1;
-}
-.indigo-hero-inner { max-width: 640px; }
-.indigo-hero h2 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 200; font-size: clamp(.625rem, .8vw, .75rem);
-  letter-spacing: .4em; text-transform: uppercase;
-  color: var(--silver); margin-bottom: 4rem;
-}
-.indigo-hero p.main-q {
-  font-family: "Noto Serif JP", serif;
-  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
-  font-weight: 300; line-height: 2.2;
-  letter-spacing: .1em;
-}
-/* story — left-aligned editorial */
-.indigo-story {
-  display: grid; grid-template-columns: 1fr 1fr;
-  min-height: 60vh; position: relative; z-index: 1;
-}
-.indigo-story-vis {
-  position: relative; overflow: hidden;
-}
-.indigo-story-vis-inner {
-  width: 100%; height: 100%; min-height: 480px;
-  background:
-    radial-gradient(ellipse at 30% 60%, #1a2844 0%, transparent 70%),
-    linear-gradient(170deg, #0e1928 0%, #1B2A4A 40%, #243a58 70%, #1a2642 100%);
-  position: relative;
-}
-.indigo-story-vis-inner::before {
-  content: ''; position: absolute; inset: 0; opacity: .06;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 150px; pointer-events: none;
-}
-.indigo-story-vis-inner::after {
-  content: ''; position: absolute; inset: 0;
-  background: repeating-linear-gradient(
-    90deg, transparent, transparent 3px,
-    rgba(250,248,245,.01) 3px, rgba(250,248,245,.01) 4px
-  );
-  pointer-events: none;
-}
-.indigo-story-body {
-  display: flex; flex-direction: column; justify-content: center;
-  padding: 12vh 6vw;
-}
-.indigo-story-body h3 {
-  font-family: "Noto Serif JP", serif;
-  font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
-  font-weight: 400; line-height: 2;
-  letter-spacing: .1em; margin-bottom: 3.5rem;
-}
-.indigo-story-body p {
-  font-size: clamp(.8125rem, .95vw, .9375rem);
-  line-height: 2.2; letter-spacing: .04em; opacity: .55;
-}
-/* pull quote — left border, italic */
-.indigo-pull {
-  padding: 14vh 8vw;
-  position: relative; z-index: 1;
-}
-.indigo-pull-inner {
-  max-width: 560px;
-  margin: 0 auto;
-}
-.indigo-pull blockquote {
-  font-family: "Noto Serif JP", serif;
-  font-size: clamp(.9375rem, 1.2vw, 1.0625rem);
-  font-weight: 400; line-height: 2.2;
-  letter-spacing: .05em;
-  font-style: italic;
-  padding-left: 2rem;
-  border-left: 1px solid var(--navy);
-  border-image: linear-gradient(to bottom, rgba(192,197,201,.3), rgba(192,197,201,.08)) 1;
-}
 
 /* ───────────────────────────
    SEC 6 : COLLECTIONS
@@ -762,12 +669,7 @@ a { color: inherit; text-decoration: none; }
   .reform h2 { letter-spacing: .08em; }
   .cases { padding: 14vh 7vw; }
   .cases-grid { grid-template-columns: 1fr; gap: 48px; }
-  .indigo-hero { min-height: 65vh; padding: 12vh 7vw; }
-  .indigo-hero p.main-q { letter-spacing: .06em; }
-  .indigo-story { grid-template-columns: 1fr; }
-  .indigo-story-vis-inner { min-height: 280px; }
-  .indigo-story-body { padding: 10vh 7vw; }
-  .indigo-pull { padding: 10vh 7vw; }
+
   .collections { padding: 12vh 7vw; }
   .col-grid { grid-template-columns: 1fr; gap: 56px; }
   .phi { padding: 16vh 7vw; }
@@ -793,7 +695,7 @@ a { color: inherit; text-decoration: none; }
   <a href="#empathy" data-label="Story"></a>
   <a href="#reform" data-label="Reform"></a>
   <a href="#cases" data-label="Cases"></a>
-  <a href="#indigo" data-label="Indigo"></a>
+
   <a href="#collections" data-label="Collections"></a>
   <a href="#phi" data-label="Philosophy"></a>
   <a href="#letter" data-label="Letter"></a>
@@ -895,45 +797,6 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
-<!-- ════ SEC 5 : INDIGO ════ -->
-<section class="indigo" id="indigo">
-  <!-- 5a: opening question -->
-  <div class="indigo-hero">
-    <div class="indigo-hero-inner">
-      <h2 class="rv">The Indigo Principle</h2>
-      <p class="main-q rv d1">
-        なぜ、UZUMEのカラーは<br>
-        ネイビーなのか。
-      </p>
-    </div>
-  </div>
-  <!-- 5b: story — left-aligned -->
-  <div class="indigo-story">
-    <div class="indigo-story-vis sc-rv">
-      <div class="indigo-story-vis-inner"></div>
-    </div>
-    <div class="indigo-story-body">
-      <h3 class="rv">インディゴは、表面にしか<br>染まらない。</h3>
-      <p class="rv d1">
-        芯は白いまま残る。<br>
-        だから使い込むほど、摩擦で色が変化し、<br>
-        持ち主の身体と生活が色に刻まれる。<br><br>
-        新品が最も美しいのではなく、<br>
-        経年変化こそが価値になる。<br>
-        同じデニムは、二つと存在しない。
-      </p>
-    </div>
-  </div>
-  <!-- 5c: pull quote — left border, italic -->
-  <div class="indigo-pull">
-    <div class="indigo-pull-inner">
-      <blockquote class="rv">
-        デニムの青が持ち主の身体で育つように、<br>
-        ジュエリーは持ち主の人生で育つ。
-      </blockquote>
-    </div>
-  </div>
-</section>
 
 <!-- ════ SEC 6 : COLLECTIONS ════ -->
 <section class="collections" id="collections">
