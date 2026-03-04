@@ -302,54 +302,49 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ───────────────────────────
-   SEC 3 : REFORM
+   SEC 3 : STRENGTHS
    ─────────────────────────── */
-.reform {
-  padding: 0;
+.strengths {
+  padding: 22vh 8vw;
   background: var(--off-white);
-}
-.reform-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  min-height: 75vh;
-}
-.reform-vis {
-  position: relative; overflow: hidden;
-  background: linear-gradient(135deg, #263754, #1B2A4A 45%, #223652);
-}
-.reform-vis::after {
-  content: ''; position: absolute; top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  width: 160px; height: 160px;
-  border: 1px solid rgba(192,197,201,.06);
-  border-radius: 48% 52% 52% 48%/58% 42% 58% 42%;
-  animation: mo 12s ease-in-out infinite;
-}
-@keyframes mo {
-  0%,100%{border-radius:48% 52% 52% 48%/58% 42% 58% 42%;transform:translate(-50%,-50%) rotate(0)}
-  33%{border-radius:52% 48% 48% 52%/42% 58% 42% 58%;transform:translate(-50%,-52%) rotate(2deg)}
-  66%{border-radius:45% 55% 55% 45%/55% 45% 55% 45%;transform:translate(-50%,-48%) rotate(-1deg)}
-}
-.reform-body {
-  display: flex; flex-direction: column; justify-content: center;
-  padding: 12vh 6vw;
   position: relative;
 }
-.reform-body .sec-num { top: 8vh; right: 4vw; }
-.reform h2 {
-  font-family: "Noto Serif JP", serif;
-  font-size: clamp(1.25rem, 2vw, 1.625rem);
-  font-weight: 400; line-height: 2;
-  letter-spacing: .12em; margin-bottom: 4rem;
+.strengths-in {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
 }
-.reform p {
+.strengths .sec-num { top: -1rem; right: -2rem; }
+.strengths h2 {
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 400; line-height: 2;
+  letter-spacing: .12em; margin-bottom: 5rem;
+}
+.strengths-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 4.5rem;
+}
+.strengths-list li {
+  position: relative;
+  padding-left: 0;
+}
+.strengths-list .st-label {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300; font-size: .6875rem;
+  letter-spacing: .2em; color: var(--silver);
+  margin-bottom: 1.25rem;
+}
+.strengths-list h3 {
+  font-family: "Noto Serif JP", serif;
+  font-size: clamp(.9375rem, 1.2vw, 1.0625rem);
+  font-weight: 400; line-height: 2;
+  letter-spacing: .08em; margin-bottom: 1.5rem;
+}
+.strengths-list p {
   font-size: clamp(.8125rem, .95vw, .9375rem);
   line-height: 2.2; color: var(--text-body);
   letter-spacing: .04em;
-}
-.kw {
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 2px;
-  transition: border-color .5s var(--ease);
 }
 
 /* ───────────────────────────
@@ -663,10 +658,8 @@ a { color: inherit; text-decoration: none; }
   .empathy { padding: 14vh 7vw; }
   .empathy h2 { letter-spacing: .08em; }
   .sec-num { font-size: 4rem !important; }
-  .reform-grid { grid-template-columns: 1fr; }
-  .reform-vis { min-height: 300px; }
-  .reform-body { padding: 10vh 7vw; }
-  .reform h2 { letter-spacing: .08em; }
+  .strengths { padding: 14vh 7vw; }
+  .strengths h2 { letter-spacing: .08em; }
   .cases { padding: 14vh 7vw; }
   .cases-grid { grid-template-columns: 1fr; gap: 48px; }
 
@@ -769,6 +762,66 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
+<!-- ════ SEC 3 : STRENGTHS ════ -->
+<section class="strengths" id="strengths">
+  <div class="strengths-in">
+    <div class="sec-num" aria-hidden="true">02</div>
+    <div class="ch rv"><i></i><span>02</span></div>
+    <h2 class="rv">UZUMEにできること。</h2>
+    <ol class="strengths-list">
+      <li class="rv">
+        <div class="st-label">01</div>
+        <h3>コンシェルジュが、想いから聴く</h3>
+        <p>
+          「こんなものでも大丈夫？」という声をよくいただきます。<br>
+          大丈夫です。UZUMEが聞くのは、値段ではなく、あなたの気持ちです。<br><br>
+          専任のコンシェルジュがお話を伺いながら、<br>
+          UZUME Basicの普遍的なデザイン、<br>
+          UZUME NOIRのアーティストとの共創——<br>
+          2つのコレクションから、あなただけのセミオーダーをご提案します。
+        </p>
+      </li>
+      <li class="rv">
+        <div class="st-label">02</div>
+        <h3>すべてのジュエリーに、鑑定書を</h3>
+        <p>
+          リモデル完了時に、鑑定書を無料でおつけしています。<br>
+          石の種類、地金の品位、重量——<br>
+          あなたのジュエリーの素性を、きちんと言葉にして次の世代へ残す。<br>
+          それも、受け継ぐための大切な準備です。
+        </p>
+      </li>
+      <li class="rv">
+        <div class="st-label">03</div>
+        <h3>甲府の職人が、一点ずつ手で仕上げる</h3>
+        <p>
+          日本の宝飾産業の中心地、山梨・甲府。<br>
+          百年以上にわたり蓄積された数万個の型と技術を持つ<br>
+          熟練の職人が、石の個性と地金の状態を見極めながら<br>
+          一点ずつ手作業で仕立てます。
+        </p>
+      </li>
+      <li class="rv">
+        <div class="st-label">04</div>
+        <h3>0.5号刻みで、指にぴったり合わせる</h3>
+        <p>
+          既製品の1号刻みではなく、0.5号単位で調整。<br>
+          「なんとなく合っている」ではなく、<br>
+          毎日つけたくなるフィット感を。
+        </p>
+      </li>
+      <li class="rv">
+        <div class="st-label">05</div>
+        <h3>日常に纏えるかたちに</h3>
+        <p>
+          パーティのためではなく、毎日のために。<br>
+          デニムとTシャツに馴染むかどうかが、<br>
+          UZUMEの美しさの基準です。
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
 
 <!-- ════ SEC 4 : CASES ════ -->
 <section class="cases" id="cases">
