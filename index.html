@@ -712,40 +712,59 @@ a { color: inherit; text-decoration: none; }
   .sec-num { font-size: 4rem !important; }
   .strengths { padding: 14vh 7vw; }
   .strengths h2 { letter-spacing: .08em; margin-bottom: 2.5rem; }
+  .strengths-in { position: relative; }
   .strengths-list {
-    gap: 0;
-    height: 60vh;
+    gap: 12px;
+    height: 72vh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-padding-top: 0;
     scrollbar-width: none;
+    position: relative;
   }
   .strengths-list::-webkit-scrollbar { display: none; }
   .strengths-list li {
     scroll-snap-align: start;
-    min-height: 60vh;
+    min-height: 62vh;
     background: #fff;
     border: 1px solid rgba(0,0,0,.06);
-    padding: 2rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,.04);
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+  /* fade hint at bottom edge */
+  .strengths-in::after {
+    content: '';
+    position: absolute;
+    bottom: 2.75rem;
+    left: 0; right: 0;
+    height: 4rem;
+    background: linear-gradient(to bottom, rgba(250,250,248,0), var(--off-white));
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity .3s var(--ease);
+  }
+  .strengths-in.at-end::after { opacity: 0; }
   .st-dots {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
+    position: relative;
+    z-index: 3;
   }
   .st-dot {
     width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--silver);
     opacity: .3;
-    transition: opacity .3s var(--ease);
+    transition: opacity .3s var(--ease), transform .3s var(--ease);
   }
-  .st-dot.active { opacity: 1; }
+  .st-dot.active { opacity: 1; transform: scale(1.4); }
   .cases { padding: 14vh 7vw; }
   .cases-grid { grid-template-columns: 1fr; gap: 48px; }
 
@@ -1157,6 +1176,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileQuery = window.matchMedia('(max-width: 768px)');
   const stList = document.querySelector('.strengths-list');
   const stDots = document.querySelectorAll('.st-dot');
+  const stIn = document.querySelector('.strengths-in');
   if (stList && stDots.length) {
     const updateDots = () => {
       if (!mobileQuery.matches) return;
@@ -1170,6 +1190,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       stDots.forEach((d, i) => d.classList.toggle('active', i === activeIndex));
+      // hide fade gradient when at last card
+      if (stIn) {
+        const atEnd = scrollTop + containerH >= stList.scrollHeight - 10;
+        stIn.classList.toggle('at-end', atEnd);
+      }
     };
     stList.addEventListener('scroll', updateDots, { passive: true });
   }
