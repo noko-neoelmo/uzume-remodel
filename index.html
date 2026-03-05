@@ -377,6 +377,18 @@ a { color: inherit; text-decoration: none; }
   line-height: 2.2; color: var(--text-body);
   letter-spacing: .04em;
 }
+.st-with-img {
+  display: flex; align-items: center; gap: 2.5rem;
+}
+.st-with-img .st-text { flex: 1; }
+.st-img {
+  width: 160px; height: auto; border-radius: 6px;
+  flex-shrink: 0; object-fit: cover;
+}
+@media (max-width: 768px) {
+  .st-with-img { flex-direction: column; }
+  .st-img { width: 120px; }
+}
 .st-dots { display: none; }
 
 /* ───────────────────────────
@@ -407,26 +419,7 @@ a { color: inherit; text-decoration: none; }
   transition: transform .6s var(--ease);
 }
 .cc:hover .cc-img { transform: scale(.98); }
-.cc-img::before, .cc-img::after {
-  position: absolute; top: 50%; font-family: "Helvetica Neue", sans-serif;
-  font-size: .4375rem; letter-spacing: .25em;
-  color: rgba(27,42,74,.12); text-transform: uppercase;
-}
-.cc-img::before { content: 'Before'; left: 22%; transform: translate(-50%,-50%); }
-.cc-img::after { content: 'After'; left: 78%; transform: translate(-50%,-50%); }
-.cc-div {
-  position: absolute; top: 12%; left: 50%;
-  width: 1px; height: 76%;
-  background: rgba(27,42,74,.04);
-}
-.cc-arr {
-  position: absolute; top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: .625rem; font-weight: 100;
-  color: rgba(192,197,201,.5);
-  letter-spacing: .3em;
-}
+.cc-img::before, .cc-img::after { display: none; }
 .cc-label {
   font-family: "Helvetica Neue", sans-serif; font-weight: 300;
   font-size: .5rem; letter-spacing: .3em; text-transform: uppercase;
@@ -838,7 +831,9 @@ a { color: inherit; text-decoration: none; }
   }
   .st-dot.active { opacity: 1; transform: scale(1.4); }
   .cases { padding: 14vh 7vw; }
-  .cases-grid { grid-template-columns: 1fr; gap: 48px; }
+  .cases-grid { grid-template-columns: 1fr 1fr; gap: 5vw 4vw; }
+  .cc-img { margin-bottom: 1.25rem; }
+  .cc-story { font-size: .75rem; line-height: 1.85; }
 
   .collections { padding: 12vh 7vw; }
   .col-grid { grid-template-columns: 1fr; gap: 56px; }
@@ -947,15 +942,25 @@ a { color: inherit; text-decoration: none; }
   <div class="ch rv" style="margin-bottom:1.75rem"><i></i><span>02</span></div>
   <h2 class="rv">たとえば、こんなふうに。</h2>
   <div class="cases-grid">
-    <div class="cc sl-l">
-      <div class="cc-img" style="background-image:url('1.png')"><div class="cc-div"></div><div class="cc-arr">→</div></div>
+    <div class="cc rv">
+      <div class="cc-img" style="background-image:url('1.png')"></div>
       <div class="cc-label">Case 01</div>
       <p class="cc-story">母がはじめてのボーナスで購入したハートのアクアマリンとピンクトルマリン。いつしかサイズも合わなくなり眠ってしまっていた。祖母のエメラルドは孫が生まれた際に記念に購入した誕生石。毎日つけやすいシグネットリングに埋め込んで、三世代がつながるデザインへ。</p>
     </div>
-    <div class="cc sl-r">
-      <div class="cc-img" style="background-image:url('2.png')"><div class="cc-div"></div><div class="cc-arr">→</div></div>
+    <div class="cc rv">
+      <div class="cc-img" style="background-image:url('2.png')"></div>
       <div class="cc-label">Case 02</div>
       <p class="cc-story">いつの日か錆びついてしまったダイヤのイヤリング。娘のためにピアスに変えようとしたけれど「失くしてしまいそうだから」とリングにリモデル。孫を抱く娘の手元でダイヤが輝く。</p>
+    </div>
+    <div class="cc rv">
+      <div class="cc-img" style="background-image:url('3.png')"></div>
+      <div class="cc-label">Case 03</div>
+      <p class="cc-story">祖母から受け継いだパールの指輪。黒ずんだ台座のまま引き出しに眠っていた。丸みのあるモダンなフォルムに仕立て直し、真珠の柔らかな光がふたたび日常に戻ってきた。</p>
+    </div>
+    <div class="cc rv">
+      <div class="cc-img" style="background-image:url('4.png')"></div>
+      <div class="cc-label">Case 04</div>
+      <p class="cc-story">母が若い頃に揃えたルビーの並び石リング。華やかだけれど今のスタイルには合わず、しまったまま。石を活かした流線的なデザインに生まれ変わり、母の記憶ごと指先に宿る一本に。</p>
     </div>
   </div>
 </section>
@@ -967,28 +972,33 @@ a { color: inherit; text-decoration: none; }
     <div class="ch rv"><i></i><span>03</span></div>
     <h2 class="rv">UZUMEにできること。</h2>
     <ol class="strengths-list">
-      <li class="rv">
-        <div class="st-label">01</div>
-        <h3>コンシェルジュが、想いから聴く</h3>
-        <img src="スクリーンショット 2026-03-04 22.59.45.png" alt="コンシェルジュのイメージ" style="width:60%; height:auto; border-radius:6px; margin-bottom:1.25rem;">
-        <p>
-          「こんなものでも大丈夫？」という声をよくいただきます。<br>
-          大丈夫です。UZUMEが聞くのは、値段ではなく、あなたの気持ちです。<br><br>
-          専任のコンシェルジュがお話を伺いながら、<br>
-          UZUME Basicの普遍的なデザイン、<br>
-          UZUME NOIRのアーティストとの共創——<br>
-          2つのコレクションから、あなただけのセミオーダーをご提案します。
-        </p>
+      <li class="rv st-with-img">
+        <div class="st-text">
+          <div class="st-label">01</div>
+          <h3>コンシェルジュが、想いから聴く</h3>
+          <p>
+            「こんなものでも大丈夫？」という声をよくいただきます。<br>
+            大丈夫です。UZUMEが聞くのは、値段ではなく、あなたの気持ちです。<br><br>
+            専任のコンシェルジュがお話を伺いながら、<br>
+            UZUME Basicの普遍的なデザイン、<br>
+            UZUME NOIRのアーティストとの共創——<br>
+            2つのコレクションから、あなただけのセミオーダーをご提案します。
+          </p>
+        </div>
+        <img class="st-img" src="スクリーンショット 2026-03-04 22.59.45.png" alt="コンシェルジュのイメージ">
       </li>
-      <li class="rv">
-        <div class="st-label">02</div>
-        <h3>すべてのジュエリーに、鑑定書を</h3>
-        <p>
-          リモデル完了時に、鑑定書を無料でおつけしています。<br>
-          石の種類、地金の品位、重量——<br>
-          あなたのジュエリーの素性を、きちんと言葉にして次の世代へ残す。<br>
-          それも、受け継ぐための大切な準備です。
-        </p>
+      <li class="rv st-with-img">
+        <div class="st-text">
+          <div class="st-label">02</div>
+          <h3>すべてのジュエリーに、鑑定書を</h3>
+          <p>
+            リモデル完了時に、鑑定書を無料でおつけしています。<br>
+            石の種類、地金の品位、重量——<br>
+            あなたのジュエリーの素性を、きちんと言葉にして次の世代へ残す。<br>
+            それも、受け継ぐための大切な準備です。
+          </p>
+        </div>
+        <img class="st-img" src="スクリーンショット 2026-03-04 23.14.36.png" alt="鑑定書のイメージ">
       </li>
       <li class="rv">
         <div class="st-label">03</div>
