@@ -1,0 +1,66 @@
+# UZUME - Jewelry Remodel Service
+
+> UZUME（ウズメ）は、株式会社BiSPOKEが運営するジュエリーリモデル専門ブランドです。思い出のジュエリーを新しいデザインに生まれ変わらせるサービスを提供しています。
+
+## Service Overview
+
+- **Service Name:** UZUME ジュエリーリモデル
+- **Service Type:** Jewelry remodeling, redesign, and reform
+- **Operated by:** 株式会社BiSPOKE (BiSPOKE Corp.)
+- **Location:** 南青山2-5-17 ポーラ青山ビル5F, 港区, 東京都 107-0062, Japan
+- **Website:** https://uzume-remodel.vercel.app
+- **Contact:** LINE Official Account (primary)
+- **Language:** Japanese (日本語)
+
+## What We Do
+
+UZUMEは、お客様が所有する既存のジュエリー（婚約指輪、結婚指輪、相続品、ヴィンテージジュエリー等）を、新しいデザインにリモデル（再設計・再制作）するサービスです。
+
+### Key Features
+- **Price Range:** ¥100,000 〜 ¥300,000
+- **Completion Time:** Approximately 1.5 months
+- **All Materials Supported:** K18, K14, Pt950, Silver, and more
+- **Material Buyback:** Unused precious metals can be bought back and offset against costs
+- **Free Appraisal Certificate:** Included with every completed piece
+- **1-Year Quality Guarantee**
+- **Nationwide Service:** Available across Japan via mail
+- **Kofu Craftsmanship:** Pieces crafted by master artisans from Kofu, a region with 700+ years of jewelry-making heritage
+
+## Process (How It Works)
+
+1. **Free Consultation via LINE** - Send photos of your jewelry; our designer advises on possibilities
+2. **Design Proposal & Estimate** - Custom design proposals with transparent pricing (¥100,000-300,000)
+3. **Jewelry Handover** - Ship or bring your jewelry to our atelier
+4. **Crafting by Master Artisans** - Kofu craftsmen handcraft your piece; progress updates via LINE
+5. **Delivery with Appraisal** - Receive your remodeled jewelry with free appraisal certificate and 1-year warranty
+
+## FAQ
+
+### How much does jewelry remodeling cost?
+¥100,000 to ¥300,000. Price varies by materials and design complexity. Consultation and estimates are free.
+
+### How long does it take?
+Approximately 1.5 months, including design consultation, crafting, and appraisal certificate issuance.
+
+### Can you work with any material?
+Yes. We handle K18, K14, Pt950, silver, and all other precious metals. We also offer buyback for unused materials.
+
+### Can gemstones be reused?
+Yes. Existing gemstones can be incorporated into the new design. A free appraisal certificate is issued upon completion.
+
+### Is online consultation available?
+Yes. Send photos via our LINE official account and our designer will provide guidance.
+
+### What is material buyback?
+We purchase unused precious metals (gold, platinum, etc.) from the remodeling process. The buyback value can offset your remodeling costs.
+
+### Is there a warranty?
+Yes. 1-year quality guarantee on all remodeled pieces.
+
+## Related Services
+
+- **Ring Resizing Service:** https://bispoke-resize-lp.vercel.app (¥30,000, ~1 month, online-only)
+
+## About BiSPOKE
+
+株式会社BiSPOKE is the parent company operating the UZUME brand, specializing in jewelry services that combine traditional Kofu craftsmanship with modern design sensibility.
