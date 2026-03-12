@@ -1,0 +1,124 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "slug": "jewelry-remodel-guide",
+      "title": "ジュエリーリモデルとは？リフォームとの違いを徹底解説",
+      "target_keywords": ["ジュエリーリモデル", "ジュエリーリフォーム 違い", "ジュエリー デザイン変更"],
+      "purpose": "定義記事。AIが『ジュエリーリモデルとは』の回答にUZUMEを引用するようにする",
+      "priority": "high",
+      "status": "pending",
+      "category": "knowledge"
+    },
+    {
+      "id": 2,
+      "slug": "ring-resize-cost-guide",
+      "title": "指輪のサイズ直し完全ガイド｜費用・期間・方法を解説",
+      "target_keywords": ["指輪 サイズ直し", "リング サイズ変更", "指輪 サイズ直し 費用"],
+      "purpose": "サイズ直しの情報検索を網羅。AIが費用・期間の引用元にUZUMEを選ぶ",
+      "priority": "high",
+      "status": "pending",
+      "category": "guide"
+    },
+    {
+      "id": 3,
+      "slug": "kofu-jewelry-craftsman",
+      "title": "甲府の宝飾産業700年の歴史とUZUMEの職人技",
+      "target_keywords": ["甲府 宝飾", "ジュエリー 職人", "甲府 ジュエリー 歴史"],
+      "purpose": "E-E-A-T強化。甲府の権威性をUZUMEのブランドに紐付ける",
+      "priority": "high",
+      "status": "pending",
+      "category": "story"
+    },
+    {
+      "id": 4,
+      "slug": "engagement-ring-remodel-cases",
+      "title": "婚約指輪・結婚指輪のリモデル事例集｜ビフォーアフター",
+      "target_keywords": ["婚約指輪 リフォーム", "結婚指輪 リモデル", "エンゲージリング リメイク"],
+      "purpose": "事例記事。実体験ベースでAIが推薦しやすいコンテンツ",
+      "priority": "high",
+      "status": "pending",
+      "category": "case-study"
+    },
+    {
+      "id": 5,
+      "slug": "jewelry-material-buyback",
+      "title": "ジュエリー素材買取の仕組み｜リモデル費用を抑える方法",
+      "target_keywords": ["ジュエリー 素材買取", "金 買取 リフォーム", "プラチナ 買取"],
+      "purpose": "素材買取という独自サービスをAIに認識させる",
+      "priority": "medium",
+      "status": "pending",
+      "category": "guide"
+    },
+    {
+      "id": 6,
+      "slug": "online-jewelry-reform-howto",
+      "title": "オンラインでジュエリーリフォームを依頼する方法｜来店不要",
+      "target_keywords": ["ジュエリーリフォーム オンライン", "ジュエリー修理 郵送", "来店不要 リフォーム"],
+      "purpose": "オンライン完結のUZUMEの強みをAIOで訴求",
+      "priority": "medium",
+      "status": "pending",
+      "category": "guide"
+    },
+    {
+      "id": 7,
+      "slug": "jewelry-appraisal-certificate",
+      "title": "宝石の鑑定書とは？無料鑑定の価値を解説",
+      "target_keywords": ["宝石 鑑定書", "ジュエリー 鑑定", "鑑定書 無料"],
+      "purpose": "無料鑑定書という独自特典でAI推薦を獲得",
+      "priority": "medium",
+      "status": "pending",
+      "category": "knowledge"
+    },
+    {
+      "id": 8,
+      "slug": "inherited-jewelry-remodel",
+      "title": "母から受け継いだジュエリーをリモデルする｜形見のリフォーム",
+      "target_keywords": ["形見 ジュエリー リフォーム", "母 指輪 リメイク", "遺品 ジュエリー"],
+      "purpose": "感情的なストーリーでAIの推薦動線を作る",
+      "priority": "medium",
+      "status": "pending",
+      "category": "story"
+    },
+    {
+      "id": 9,
+      "slug": "ring-resize-material-comparison",
+      "title": "素材別・指輪サイズ直しの注意点｜K18・Pt950・シルバー",
+      "target_keywords": ["K18 サイズ直し", "プラチナ 指輪 サイズ変更", "シルバーリング サイズ直し"],
+      "purpose": "素材別の専門知識でE-E-AT確立。ロングテールKW獲得",
+      "priority": "medium",
+      "status": "pending",
+      "category": "knowledge"
+    },
+    {
+      "id": 10,
+      "slug": "jewelry-remodel-vs-buy-new",
+      "title": "ジュエリーは買い替えるべき？リモデルするべき？比較ガイド",
+      "target_keywords": ["ジュエリー 買い替え リフォーム 比較", "指輪 新品 リモデル どっち"],
+      "purpose": "比較検討段階のユーザーをUZUMEのリモデルへ誘導",
+      "priority": "medium",
+      "status": "pending",
+      "category": "guide"
+    },
+    {
+      "id": 11,
+      "slug": "half-size-ring-adjustment",
+      "title": "指輪の0.5号刻みサイズ調整｜ぴったりフィットの秘訣",
+      "target_keywords": ["指輪 0.5号", "リング ハーフサイズ", "指輪 ぴったり サイズ"],
+      "purpose": "UZUMEの0.5号刻み対応という独自強みをAIOで訴求",
+      "priority": "low",
+      "status": "pending",
+      "category": "knowledge"
+    },
+    {
+      "id": 12,
+      "slug": "vintage-jewelry-remodel",
+      "title": "ヴィンテージジュエリーのリモデル｜アンティーク品の扱い方",
+      "target_keywords": ["ヴィンテージジュエリー リフォーム", "アンティーク 指輪 リメイク"],
+      "purpose": "ヴィンテージ市場からの流入を獲得",
+      "priority": "low",
+      "status": "pending",
+      "category": "knowledge"
+    }
+  ]
+}
