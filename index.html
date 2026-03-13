@@ -8,6 +8,68 @@
 <meta property="og:title" content="ジュエリーリモデル｜デザイン変更・リフォーム | UZUME">
 <meta property="og:description" content="価値を測る場所ではなく、自分のためのものにする場所。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://uzume-jewelry.jp/remodel">
+<link rel="canonical" href="https://uzume-jewelry.jp/remodel">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '925486173445456');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=925486173445456&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- Data Layer for Ad Tracking -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.bspkTracking = {
+  service: 'remodel',
+  page: 'lp',
+  brand: 'uzume',
+  domain: 'uzume-jewelry.jp',
+  utm: Object.fromEntries(new URLSearchParams(window.location.search))
+};
+window.dataLayer.push({
+  event: 'page_metadata',
+  service: 'remodel',
+  page_type: 'landing_page',
+  brand: 'uzume'
+});
+
+// Meta Conversions API (CAPI) client helper
+window.metaCAPI = function(eventName, customData) {
+  var cookies = document.cookie.split(';').reduce(function(acc, c) {
+    var parts = c.trim().split('=');
+    acc[parts[0]] = parts.slice(1).join('=');
+    return acc;
+  }, {});
+  fetch('/api/meta-capi', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      event_name: eventName,
+      event_time: Math.floor(Date.now() / 1000),
+      event_source_url: window.location.href,
+      user_data: {
+        fbc: cookies._fbc || '',
+        fbp: cookies._fbp || '',
+        client_user_agent: navigator.userAgent
+      },
+      custom_data: customData || {}
+    })
+  }).catch(function() {});
+};
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -21,10 +83,10 @@
 {"@context":"https://schema.org","@type":"HowTo","name":"ジュエリーリモデルの流れ","description":"思い出のジュエリーを新しいデザインに。約1.5ヶ月で完成。","step":[{"@type":"HowToStep","name":"LINEで無料相談","text":"ジュエリーの写真をLINEで送信。デザイナーが対応可能性と方向性をアドバイスします。費用は一切かかりません。"},{"@type":"HowToStep","name":"デザイン提案・お見積もり","text":"ご希望や予算をもとにデザイン案をご提示。お見積もり（10万〜30万円）に納得いただいてから進行します。"},{"@type":"HowToStep","name":"ジュエリーお預かり","text":"ジュエリーをお預けいただきます。来店または郵送で対応。"},{"@type":"HowToStep","name":"職人による加工・製造","text":"甲府の熟練職人が一点一点手仕上げ。進捗はLINEでお知らせします。"},{"@type":"HowToStep","name":"完成品納品・無料鑑定書発行","text":"完成したリモデルジュエリーをお届け。石種・地金品位・重量を記録した無料鑑定書と、1年間の品質保証が付きます。"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"ジュエリーリモデル","description":"思い出のジュエリーを新しいデザインに。全素材対応、素材買取OK、無料鑑定書付き。","provider":{"@type":"Organization","name":"株式会社BiSPOKE / UZUME","url":"https://bispoke-corp.vercel.app"},"areaServed":{"@type":"Country","name":"Japan"},"url":"https://uzume-remodel.vercel.app","offers":{"@type":"AggregateOffer","lowPrice":"100000","highPrice":"300000","priceCurrency":"JPY"},"isPartOf":{"@type":"Organization","name":"株式会社BiSPOKE","url":"https://bispoke-corp.vercel.app","sameAs":["https://uzume-remodel.vercel.app","https://bispoke-resize-lp.vercel.app"]}}
+{"@context":"https://schema.org","@type":"Service","name":"ジュエリーリモデル","description":"思い出のジュエリーを新しいデザインに。全素材対応、素材買取OK、無料鑑定書付き。","provider":{"@type":"Organization","name":"株式会社BiSPOKE / UZUME","url":"https://bispoke.co.jp"},"areaServed":{"@type":"Country","name":"Japan"},"url":"https://uzume-jewelry.jp/remodel","offers":{"@type":"AggregateOffer","lowPrice":"100000","highPrice":"300000","priceCurrency":"JPY"},"isPartOf":{"@type":"Organization","name":"株式会社BiSPOKE","url":"https://bispoke.co.jp","sameAs":["https://uzume-jewelry.jp/remodel","https://uzume-jewelry.jp/resize"]}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UZUME","item":"https://bispoke-corp.vercel.app"},{"@type":"ListItem","position":2,"name":"ジュエリーリモデル","item":"https://uzume-remodel.vercel.app"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"UZUME","item":"https://bispoke.co.jp"},{"@type":"ListItem","position":2,"name":"ジュエリーリモデル","item":"https://uzume-jewelry.jp/remodel"}]}
 </script>
 <style>
 /* ══════════════════════════════
@@ -1261,6 +1323,86 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!wasOpen) item.classList.add('open');
     });
   });
+
+  // ── Ad Tracking: CTA clicks & engagement events ──
+  // LINE CTA clicks → Meta Lead event
+  document.querySelectorAll('a[href*="lin.ee"], a[href*="line.me"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var label = el.textContent.trim().substring(0, 40);
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', {
+          content_name: 'LINE_CTA_remodel',
+          content_category: 'remodel',
+          value: 0,
+          currency: 'JPY'
+        });
+      }
+      if (typeof metaCAPI === 'function') {
+        metaCAPI('Lead', { content_name: 'LINE_CTA_remodel', content_category: 'remodel' });
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'cta_click',
+        cta_type: 'line',
+        cta_label: label,
+        service: 'remodel'
+      });
+    });
+  });
+
+  // Section view tracking for engagement depth
+  var sectionNames = {
+    'hero': 'hero', 'atelier': 'atelier', 'empathy': 'empathy',
+    'cases': 'cases', 'strengths': 'strengths', 'phi': 'philosophy',
+    'letter': 'letter', 'faq': 'faq', 'cta': 'cta'
+  };
+  var trackedSections = {};
+  var engagementIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !trackedSections[entry.target.id]) {
+        trackedSections[entry.target.id] = true;
+        var name = sectionNames[entry.target.id] || entry.target.id;
+        if (typeof fbq === 'function') {
+          fbq('trackCustom', 'SectionView', {
+            section: name,
+            service: 'remodel'
+          });
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'section_view',
+          section_name: name,
+          service: 'remodel'
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  Object.keys(sectionNames).forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) engagementIO.observe(el);
+  });
+
+  // Scroll depth tracking (25%, 50%, 75%, 100%)
+  var scrollMilestones = {};
+  window.addEventListener('scroll', function() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    if (h <= 0) return;
+    var pct = Math.round(window.scrollY / h * 100);
+    [25, 50, 75, 100].forEach(function(m) {
+      if (pct >= m && !scrollMilestones[m]) {
+        scrollMilestones[m] = true;
+        if (typeof fbq === 'function') {
+          fbq('trackCustom', 'ScrollDepth', { depth: m, service: 'remodel' });
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'scroll_depth',
+          depth_percent: m,
+          service: 'remodel'
+        });
+      }
+    });
+  }, { passive: true });
 });
 </script>
 </body>
